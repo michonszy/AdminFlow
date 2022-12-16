@@ -12,6 +12,8 @@ import Sidebar from './Sidebar';
 
 import './index.css';
 import Favoritesbar from "./Favoritesbar";
+import {getValue} from "@testing-library/user-event/dist/utils";
+import {getNodeText} from "@testing-library/react";
 
 
 const initialEdges = [{ id: '1-2', source: '1', target: '2' , type:'step'}];
@@ -68,7 +70,7 @@ function Flow() {
                 id: getId(),
                 type,
                 position,
-                data: { label: `${type} node` },
+                data: { label: event.dataTransfer.getData('tekst')},
             };
 
             setNodes((nds) => nds.concat(newNode));
@@ -97,12 +99,14 @@ function Flow() {
                     >
                         <div className="controls">
                             <button className="executeButton">Execute </button>
+                            <button className="saveButton">Save </button>
                         </div>
 
                         <Controls />
                         <Background/>
+                        <MiniMap nodeStrokeWidth={3} zoomable pannable />
                     </ReactFlow>
-                    <MiniMap nodeStrokeWidth={3} zoomable pannable />
+
                 </div>
 
                 <Sidebar />

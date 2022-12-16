@@ -11,6 +11,7 @@ export default () => {
 
     return (
         <aside>
+            <div className="sidePanel">
                 <div className="search">
                     <input type="text" className="searchTerm" placeholder="What are you looking for?"/>
                         <button type="submit" className="searchButton">
@@ -20,13 +21,14 @@ export default () => {
 
             <div className="description">Here you can find your favorite actions</div>
             <div className="dndnode input" onDragStart={(event) => onDragStart(event, 'input')} draggable>
-                Input Node
+                pizda Node
             </div>
             <div className="dndnode" onDragStart={(event) => onDragStart(event, 'default')} draggable>
                 Default Node
             </div>
             <div className="dndnode output" onDragStart={(event) => onDragStart(event, 'output')} draggable>
                 Output Node
+            </div>
             </div>
         </aside>
     );

@@ -69,6 +69,17 @@ code {
     max-width: 250px;
   }
 }
+
+.controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  font-size: 12px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .executeButton{
   margin-top: 20px;
   display: inline-block;
@@ -88,15 +99,39 @@ code {
   color: #E9C48C;
 
 }
-.controls {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 10;
-  font-size: 12px;
-}
+
 .executeButton:hover{
   background: #E9C48C;
   color: #313140;
   box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+.saveButton{
+  margin-top: 20px;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 7px;
+  background-color: #39AA3D;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 50%);
+  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+  color: #E9C48C;
+
+}
+
+.saveButton:hover{
+  background: #E9C48C;
+  color: #313140;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+.sidePanel{
+  overflow: scroll;
+  height: 799px;
 }

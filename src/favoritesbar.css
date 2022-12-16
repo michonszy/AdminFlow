@@ -31,3 +31,7 @@
     font-size: 20px;
 }
 
+.sidePanel {
+    overflow: scroll;
+    height:750px;
+}
