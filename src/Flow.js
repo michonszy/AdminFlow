@@ -19,7 +19,7 @@ import {getNodeText} from "@testing-library/react";
 const initialEdges = [{ id: '1-2', source: '1', target: '2' , type:'step'}];
 
 
-//tutaj definiujemy bloczki
+
 const initialNodes = [
     {
         id: '1',
@@ -49,6 +49,14 @@ function Flow() {
         event.preventDefault();
         event.dataTransfer.dropEffect = 'move';
     }, []);
+
+    const onSave = useCallback(() => {
+        if (reactFlowInstance) {
+            const flow = reactFlowInstance.toObject();
+            localStorage.setItem(reactFlowInstance, JSON.stringify(flow));
+            console.log(JSON.stringify(flow));
+        }
+    }, [reactFlowInstance]);
 
     const onDrop = useCallback(
         (event) => {
@@ -99,7 +107,7 @@ function Flow() {
                     >
                         <div className="controls">
                             <button className="executeButton">Execute </button>
-                            <button className="saveButton">Save </button>
+                            <button className="saveButton" onClick={onSave}>Save </button>
                         </div>
 
                         <Controls />
