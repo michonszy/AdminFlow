@@ -2,12 +2,14 @@
     width: 100%;
     position: relative;
     display: flex;
+
 }
 
 .searchTerm {
     width: 100%;
     border: 3px solid #313140;
     border-right: none;
+
     padding: 5px;
     height: 20px;
     border-radius: 5px 0 0 5px;
@@ -20,6 +22,7 @@
     color: #E9C48C;
 }
 .searchButton {
+
     width: 40px;
     height: 36px;
     border: 1px solid #313140;

@@ -14,6 +14,10 @@ import './index.css';
 import Favoritesbar from "./Favoritesbar";
 import {getValue} from "@testing-library/user-event/dist/utils";
 import {getNodeText} from "@testing-library/react";
+import Outputpanel from "./Outputpanel";
+
+
+
 
 
 const initialEdges = [{ id: '1-2', source: '1', target: '2' , type:'step'}];
@@ -25,7 +29,7 @@ const initialNodes = [
         id: '1',
         position: { x: 0, y: 0 },
         data: { label: 'Connect to host' },
-        type: 'input',
+        type: 'input'
     },
     {
         id: '2',
@@ -55,6 +59,7 @@ function Flow() {
             const flow = reactFlowInstance.toObject();
             localStorage.setItem(reactFlowInstance, JSON.stringify(flow));
             console.log(JSON.stringify(flow));
+
         }
     }, [reactFlowInstance]);
 
@@ -93,7 +98,7 @@ function Flow() {
 
             <ReactFlowProvider>
 
-                <div className="reactflow-wrapper" ref={reactFlowWrapper}  style={{ height: '800px', width:'500px' }}>
+                <div className="reactflow-wrapper" ref={reactFlowWrapper}  style={{ height: '750px', width:'500px' }}>
                     <ReactFlow
                         nodes={nodes}
                         edges={edges}
@@ -113,8 +118,9 @@ function Flow() {
                         <Controls />
                         <Background/>
                         <MiniMap nodeStrokeWidth={3} zoomable pannable />
-                    </ReactFlow>
 
+                    </ReactFlow>
+                    <Outputpanel/>
                 </div>
 
                 <Sidebar />
