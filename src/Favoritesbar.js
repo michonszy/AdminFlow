@@ -21,13 +21,13 @@ export default () => {
 
             <div className="description">Here you can find your favorite actions</div>
             <div className="dndnode input" onDragStart={(event) => onDragStart(event, 'input')} draggable>
-                pizda Node
+                Favorite Node1
             </div>
             <div className="dndnode" onDragStart={(event) => onDragStart(event, 'default')} draggable>
-                Default Node
+                Favorite Node2
             </div>
             <div className="dndnode output" onDragStart={(event) => onDragStart(event, 'output')} draggable>
-                Output Node
+                Favorite Node3
             </div>
             </div>
         </aside>

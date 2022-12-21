@@ -15,29 +15,46 @@ import Favoritesbar from "./Favoritesbar";
 import {getValue} from "@testing-library/user-event/dist/utils";
 import {getNodeText} from "@testing-library/react";
 import Outputpanel from "./Outputpanel";
+import TextUpdaterNode from './TextUpdaterNode.js';
 
-
-
-
-
-const initialEdges = [{ id: '1-2', source: '1', target: '2' , type:'step'}];
-
+import './text-updater-node.css';
 
 
 const initialNodes = [
     {
         id: '1',
-        position: { x: 0, y: 0 },
+        position: { x: 30, y: 0 },
         data: { label: 'Connect to host' },
         type: 'input'
     },
     {
         id: '2',
-        position: { x: 100, y: 100 },
+        position: { x: 50, y: 100 },
         data: { label: 'Ask for installed linux version' },
     },
+    { id: '3',
+        type: 'textUpdater',
+        position: { x: 0, y: 200 },
+        data: { label: 'GREP (find text in file): ' }
+    },
+    {
+        id: '4',
+        type: 'default',
+        className: 'annotation',
+        data: {
+            label: (
+                <>
+                    <h4>ℹ️ README ️</h4>
+                    Zdefiniuj akcje za pomocą nodeów po lewej stronie lub wybierz istniejący scenariusz z prawego panelu
+                </>
+            ),
+        },
+        draggable: false,
+        selectable: false,
+        position: { x: -150, y: -150 },
+    },
 ];
-
+const nodeTypes = { textUpdater: TextUpdaterNode };
 let id = 0;
 const getId = () => `dndnode_${id++}`;
 
@@ -62,6 +79,7 @@ function Flow() {
 
         }
     }, [reactFlowInstance]);
+
 
     const onDrop = useCallback(
         (event) => {
@@ -104,6 +122,7 @@ function Flow() {
                         edges={edges}
                         onNodesChange={onNodesChange}
                         onEdgesChange={onEdgesChange}
+                        nodeTypes={nodeTypes}
                         onConnect={onConnect}
                         onInit={setReactFlowInstance}
                         onDrop={onDrop}

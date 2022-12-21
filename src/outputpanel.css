@@ -6,6 +6,29 @@
 ul{
     list-style-type: none;
 }
-button{
-    margin:5px;
+
+.Button{
+    margin: 5px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 30px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #E9C48C;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 50%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    color: #313140;
+
+}
+
+.Button:hover{
+    background: #39AA3D;
+    color: #E9C48C;
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
 }
