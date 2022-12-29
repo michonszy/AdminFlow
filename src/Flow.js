@@ -11,7 +11,7 @@ import 'reactflow/dist/style.css';
 import Sidebar from './Sidebar';
 
 import './index.css';
-import Favoritesbar from "./Favoritesbar";
+import Favoritesbar from "./Hostsbar";
 import {getValue} from "@testing-library/user-event/dist/utils";
 import {getNodeText} from "@testing-library/react";
 import Outputpanel from "./Outputpanel";
@@ -45,7 +45,7 @@ const initialNodes = [
             label: (
                 <>
                     <h4>ℹ️ README ️</h4>
-                    Zdefiniuj akcje za pomocą nodeów po lewej stronie lub wybierz istniejący scenariusz z prawego panelu
+                    Zdefiniuj akcje za pomocą nodeów po lewej stronie, dodaj hosty po prawej, wykonaj i oglądaj wynik na dole! (btw narazie to nie działa)
                 </>
             ),
         },
@@ -130,8 +130,8 @@ function Flow() {
                         fitView
                     >
                         <div className="controls">
-                            <button className="executeButton">Execute </button>
-                            <button className="saveButton" onClick={onSave}>Save </button>
+                            <button className="executeButton" onClick={onSave}>Execute </button>
+                            {/*<button className="saveButton" onClick={onSave}>Save </button>*/}
                         </div>
 
                         <Controls />
