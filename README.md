@@ -1,7 +1,7 @@
 # AdminFlow
 Front-end obecnie znajduje się w branchu master (obecnie aplikacja przeglądarkowa).
 
-System jest narazie ultra prosty, jedynie pokazuje że się da, i jak ma wyglądać ogólnie, oczywiście te nodey zamierzam odpowiednio customizować
+System jest narazie ultra prosty, jedynie pokazuje że się da, i jak ma wyglądać ogólnie, oczywiście te nodey jak i cały wygląd aplikacji zamierzam odpowiednio customizować
 
 Obecny wygląd:
 
