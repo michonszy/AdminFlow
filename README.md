@@ -1,5 +1,5 @@
 # AdminFlow
-Front-end obecnie znajduje się w branchu master (obecnie aplikacja przeglądarkowa).
+Front-end obecnie znajduje się w branchu master (obecnie aplikacja przeglądarkowa, merge do main przejdzie dopiero jak faktycznie zabiorę się za pracę z electronem).
 
 System jest narazie ultra prosty, jedynie pokazuje że się da, i jak ma wyglądać ogólnie, oczywiście te nodey jak i cały wygląd aplikacji zamierzam odpowiednio customizować
 
