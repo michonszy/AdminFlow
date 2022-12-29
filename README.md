@@ -7,7 +7,7 @@ Obecny wygląd:
 
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/33634277/209938597-68a24c2d-fa36-4467-a1d5-f4cc25ac197e.png">
 
-Wygląd z wynikiem:
+Wygląd z wynikiem (finalnie prawdopodobnie będzie to osobne okno w electronie ze względu że niektóre wyniki chce wizualizować np za pomocą wykresów)
 
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/33634277/209938619-054ed5eb-d116-4484-9fce-2f0dbd85779e.png">
 
