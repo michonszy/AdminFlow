@@ -30,4 +30,10 @@ BTFM: https://www.libristo.pl/ksiazka/blue-team-field-manual-btfm.htm
 
 RTFM : https://www.libristo.pl/ksiazka/rtfm-red-team-field-manual_21958631.html?utm_source=ceneo&utm_medium=referral&ceneo_cid=95809735-422b-1d59-4800-3adc6bd2896a
 
+LFM: https://www.amazon.com/LFM-Linux-Manual-Tim-Bryant/dp/1736526723
+
+(z tych 3 powyższych pozycji zaczerpnięcie najpopularniejszych komend/scenariuszy itd)
+
+Unix i Linux. Przewodnik administratora systemów. Wydanie V: https://helion.pl/ksiazki/unix-i-linux-przewodnik-administratora-systemow-wydanie-v-evi-nemeth-garth-snyder-trent-r-hein-ben-whal,unlip5.htm#format/e
+
 Sekurak bezpieczeństwo aplikacji webowych: https://sklep.securitum.pl/ksiazka-bezpieczenstwo-aplikacji-webowych
